@@ -1,10 +1,10 @@
 execute as @e[tag=game] at @s run execute as @e[distance=..20,tag=!game_player] at @s if block ~ ~-1 ~ red_concrete run tag @s add game_player_tmp
-execute as @a[tag=game_player_tmp] run say @s 加入遊戲。
+execute as @a[tag=game_player_tmp] run say 加入遊戲。
 execute as @a[tag=game_player_tmp] run tag @s add game_player
 execute as @a[tag=game_player_tmp] run tag @s remove game_player_tmp
 
-execute as @e[tag=game] at @s run execute as @e[distance=..20,tag=game_player] at @s if block ~ ~-1 ~ black_concrete run tag @s add game_player_tmp
-execute as @a[tag=game_player_tmp] run say @s 離開遊戲。
+execute as @e[tag=game] at @s run execute as @e[distance=..20,tag=game_player] at @s if block ~ ~-1 ~ blue_concrete run tag @s add game_player_tmp
+execute as @a[tag=game_player_tmp] run say 離開遊戲。
 execute as @a[tag=game_player_tmp] run tag @s remove game_player
 execute as @a[tag=game_player_tmp] run tag @s remove game_player_tmp
 
