@@ -1,5 +1,7 @@
 function build_guess:end
 execute at @s run summon armor_stand ~ ~2 ~ {Marker:1b, Tags:[game], CustomName:'{"text":"你蓋我猜"}', CustomNameVisible:1b, Invisible:1b}
+execute at @s run summon armor_stand ~7 ~2 ~7 {Marker:1b, Tags:[game_obj], CustomName:'{"text":"加入遊戲"}', CustomNameVisible:1b, Invisible:1b}
+execute at @s run summon armor_stand ~-7 ~2 ~7 {Marker:1b, Tags:[game_obj], CustomName:'{"text":"離開遊戲"}', CustomNameVisible:1b, Invisible:1b}
 execute at @s run summon armor_stand ~ ~2 ~ {Marker:1b, Tags:[game_timer_one], CustomName:'{"text":"每 Tick 計時器改變量"}', Invisible:1b}
 execute at @s run summon armor_stand ~ ~2 ~ {Marker:1b, Tags:[game_timer], CustomName:'{"text":"計時器"}', Invisible:1b}
 execute at @s run summon armor_stand ~ ~2 ~ {Marker:1b, Tags:[game_timer_end], CustomName:'{"text":"終止時間"}', Invisible:1b}
@@ -106,6 +108,7 @@ execute at @e[tag=game] run fill ~-10 ~-4 ~10 ~-7 ~-4 ~7 blue_concrete
 scoreboard objectives add timer dummy
 scoreboard objectives add status dummy
 scoreboard objectives add round dummy
+scoreboard objectives add sidebar dummy "狀態列表"
 scoreboard players add @e[tag=game] status 0
 scoreboard players add @e[tag=game_timer_one] timer 1
 

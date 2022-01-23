@@ -20,39 +20,39 @@ setblock 0 201 0 oak_sign
 effect give @e[tag=game_ans] invisibility 10000 1 true
 
 
-execute as @e[tag=game_room_1] run execute as @s[tag=game_guess] at @s run summon shulker ~1 ~ ~22 {Invulnerable:1b, Tags:[game_room_1, game_obj, game_ans],NoAI:1b, DeathLootTable:''} 
+execute as @e[tag=game_room_1] run execute as @s[tag=game_guess] at @s run summon shulker ~1 ~ ~22 {Invulnerable:1b, Tags:[game_room_1, game_obj, game_ans],NoAI:1b, DeathLootTable:'', Color:11b} 
 execute as @e[tag=game_guess,tag=game_room_1] run data modify block 0 201 0 Text1 set from entity @s CustomName
 execute as @e[tag=game_room_1] run execute as @s[tag=game_ans] at @s run data modify entity @s CustomName set from block 0 201 0 Text1
 
-execute as @e[tag=game_room_2] run execute as @s[tag=game_guess] at @s run summon shulker ~1 ~ ~22 {Invulnerable:1b, Tags:[game_room_2, game_obj, game_ans],NoAI:1b, DeathLootTable:''} 
+execute as @e[tag=game_room_2] run execute as @s[tag=game_guess] at @s run summon shulker ~1 ~ ~22 {Invulnerable:1b, Tags:[game_room_2, game_obj, game_ans],NoAI:1b, DeathLootTable:'', Color:11b} 
 execute as @e[tag=game_guess,tag=game_room_2] run data modify block 0 201 0 Text1 set from entity @s CustomName
 execute as @e[tag=game_room_2] run execute as @s[tag=game_ans] at @s run data modify entity @s CustomName set from block 0 201 0 Text1
 
-execute as @e[tag=game_room_3] run execute as @s[tag=game_guess] at @s run summon shulker ~1 ~ ~22 {Invulnerable:1b, Tags:[game_room_3, game_obj, game_ans],NoAI:1b, DeathLootTable:''} 
+execute as @e[tag=game_room_3] run execute as @s[tag=game_guess] at @s run summon shulker ~1 ~ ~22 {Invulnerable:1b, Tags:[game_room_3, game_obj, game_ans],NoAI:1b, DeathLootTable:'', Color:11b} 
 execute as @e[tag=game_guess,tag=game_room_3] run data modify block 0 201 0 Text1 set from entity @s CustomName
 execute as @e[tag=game_room_3] run execute as @s[tag=game_ans] at @s run data modify entity @s CustomName set from block 0 201 0 Text1
 
-execute as @e[tag=game_room_4] run execute as @s[tag=game_guess] at @s run summon shulker ~1 ~ ~22 {Invulnerable:1b, Tags:[game_room_4, game_obj, game_ans],NoAI:1b, DeathLootTable:''} 
+execute as @e[tag=game_room_4] run execute as @s[tag=game_guess] at @s run summon shulker ~1 ~ ~22 {Invulnerable:1b, Tags:[game_room_4, game_obj, game_ans],NoAI:1b, DeathLootTable:'', Color:11b} 
 execute as @e[tag=game_guess,tag=game_room_4] run data modify block 0 201 0 Text1 set from entity @s CustomName
 execute as @e[tag=game_room_4] run execute as @s[tag=game_ans] at @s run data modify entity @s CustomName set from block 0 201 0 Text1
 
-execute as @e[tag=game_room_5] run execute as @s[tag=game_guess] at @s run summon shulker ~1 ~ ~22 {Invulnerable:1b, Tags:[game_room_5, game_obj, game_ans],NoAI:1b, DeathLootTable:''} 
+execute as @e[tag=game_room_5] run execute as @s[tag=game_guess] at @s run summon shulker ~1 ~ ~22 {Invulnerable:1b, Tags:[game_room_5, game_obj, game_ans],NoAI:1b, DeathLootTable:'', Color:11b} 
 execute as @e[tag=game_guess,tag=game_room_5] run data modify block 0 201 0 Text1 set from entity @s CustomName
 execute as @e[tag=game_room_5] run execute as @s[tag=game_ans] at @s run data modify entity @s CustomName set from block 0 201 0 Text1
 
-execute as @e[tag=game_room_6] run execute as @s[tag=game_guess] at @s run summon shulker ~1 ~ ~22 {Invulnerable:1b, Tags:[game_room_6, game_obj, game_ans],NoAI:1b, DeathLootTable:''} 
+execute as @e[tag=game_room_6] run execute as @s[tag=game_guess] at @s run summon shulker ~1 ~ ~22 {Invulnerable:1b, Tags:[game_room_6, game_obj, game_ans],NoAI:1b, DeathLootTable:'', Color:11b} 
 execute as @e[tag=game_guess,tag=game_room_6] run data modify block 0 201 0 Text1 set from entity @s CustomName
 execute as @e[tag=game_room_6] run execute as @s[tag=game_ans] at @s run data modify entity @s CustomName set from block 0 201 0 Text1
 
-execute as @e[tag=game_room_7] run execute as @s[tag=game_guess] at @s run summon shulker ~1 ~ ~22 {Invulnerable:1b, Tags:[game_room_7, game_obj, game_ans],NoAI:1b, DeathLootTable:''} 
+execute as @e[tag=game_room_7] run execute as @s[tag=game_guess] at @s run summon shulker ~1 ~ ~22 {Invulnerable:1b, Tags:[game_room_7, game_obj, game_ans],NoAI:1b, DeathLootTable:'', Color:11b} 
 execute as @e[tag=game_guess,tag=game_room_7] run data modify block 0 201 0 Text1 set from entity @s CustomName
 execute as @e[tag=game_room_7] run execute as @s[tag=game_ans] at @s run data modify entity @s CustomName set from block 0 201 0 Text1
 
-execute as @e[tag=game_room_8] run execute as @s[tag=game_guess] at @s run summon shulker ~1 ~ ~22 {Invulnerable:1b, Tags:[game_room_8, game_obj, game_ans],NoAI:1b, DeathLootTable:''} 
+execute as @e[tag=game_room_8] run execute as @s[tag=game_guess] at @s run summon shulker ~1 ~ ~22 {Invulnerable:1b, Tags:[game_room_8, game_obj, game_ans],NoAI:1b, DeathLootTable:'', Color:11b} 
 execute as @e[tag=game_guess,tag=game_room_8] run data modify block 0 201 0 Text1 set from entity @s CustomName
 execute as @e[tag=game_room_8] run execute as @s[tag=game_ans] at @s run data modify entity @s CustomName set from block 0 201 0 Text1
 
-execute as @e[tag=game_room_9] run execute as @s[tag=game_guess] at @s run summon shulker ~1 ~ ~22 {Invulnerable:1b, Tags:[game_room_9, game_obj, game_ans],NoAI:1b, DeathLootTable:''} 
+execute as @e[tag=game_room_9] run execute as @s[tag=game_guess] at @s run summon shulker ~1 ~ ~22 {Invulnerable:1b, Tags:[game_room_9, game_obj, game_ans],NoAI:1b, DeathLootTable:'', Color:11b} 
 execute as @e[tag=game_guess,tag=game_room_9] run data modify block 0 201 0 Text1 set from entity @s CustomName
 execute as @e[tag=game_room_9] run execute as @s[tag=game_ans] at @s run data modify entity @s CustomName set from block 0 201 0 Text1
 

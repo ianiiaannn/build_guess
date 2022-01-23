@@ -2,6 +2,8 @@ execute at @e[tag=game] run fill ~11 ~-4 ~11 ~-11 ~40 ~-11 air
 
 scoreboard objectives remove timer
 scoreboard objectives remove status
+scoreboard objectives remove sidebar
+scoreboard objectives remove round
 
 execute at @e[tag=game] run clone ~11 ~-4 ~11 ~-11 ~40 ~-11 ~22 ~-4 ~22 replace force
 execute at @e[tag=game] run clone ~11 ~-4 ~11 ~-11 ~40 ~-11 ~22 ~-4 ~44 replace force

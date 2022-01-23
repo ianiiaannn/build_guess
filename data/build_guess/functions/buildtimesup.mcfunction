@@ -12,15 +12,15 @@ scoreboard players reset @e[tag=game_timer] timer
 scoreboard players set @e[tag=game_timer_end] timer 1000
 scoreboard players set @e[tag=game] status 2
 
-execute at @e[tag=game_worker, limit=1] run summon shulker ~ ~ ~ {Invulnerable:1b, Tags:[game_room_1, game_obj, game_guess],NoAI:1b, DeathLootTable:''} 
-execute at @e[tag=game_worker, limit=1] run summon shulker ~22 ~ ~ {Invulnerable:1b, Tags:[game_room_2, game_obj, game_guess],NoAI:1b, DeathLootTable:''} 
-execute at @e[tag=game_worker, limit=1] run summon shulker ~44 ~ ~ {Invulnerable:1b, Tags:[game_room_3, game_obj, game_guess],NoAI:1b, DeathLootTable:''} 
-execute at @e[tag=game_worker, limit=1] run summon shulker ~66 ~ ~ {Invulnerable:1b, Tags:[game_room_4, game_obj, game_guess],NoAI:1b, DeathLootTable:''} 
-execute at @e[tag=game_worker, limit=1] run summon shulker ~88 ~ ~ {Invulnerable:1b, Tags:[game_room_5, game_obj, game_guess],NoAI:1b, DeathLootTable:''} 
-execute at @e[tag=game_worker, limit=1] run summon shulker ~110 ~ ~ {Invulnerable:1b, Tags:[game_room_6, game_obj, game_guess],NoAI:1b, DeathLootTable:''} 
-execute at @e[tag=game_worker, limit=1] run summon shulker ~132 ~ ~ {Invulnerable:1b, Tags:[game_room_7, game_obj, game_guess],NoAI:1b, DeathLootTable:''} 
-execute at @e[tag=game_worker, limit=1] run summon shulker ~154 ~ ~ {Invulnerable:1b, Tags:[game_room_8, game_obj, game_guess],NoAI:1b, DeathLootTable:''} 
-execute at @e[tag=game_worker, limit=1] run summon shulker ~176 ~ ~ {Invulnerable:1b, Tags:[game_room_9, game_obj, game_guess],NoAI:1b, DeathLootTable:''} 
+execute at @e[tag=game_worker, limit=1] run summon shulker ~ ~ ~ {Invulnerable:1b, Tags:[game_room_1, game_obj, game_guess],NoAI:1b, DeathLootTable:'', Color:14b} 
+execute at @e[tag=game_worker, limit=1] run summon shulker ~22 ~ ~ {Invulnerable:1b, Tags:[game_room_2, game_obj, game_guess],NoAI:1b, DeathLootTable:'', Color:14b} 
+execute at @e[tag=game_worker, limit=1] run summon shulker ~44 ~ ~ {Invulnerable:1b, Tags:[game_room_3, game_obj, game_guess],NoAI:1b, DeathLootTable:'', Color:14b} 
+execute at @e[tag=game_worker, limit=1] run summon shulker ~66 ~ ~ {Invulnerable:1b, Tags:[game_room_4, game_obj, game_guess],NoAI:1b, DeathLootTable:'', Color:14b} 
+execute at @e[tag=game_worker, limit=1] run summon shulker ~88 ~ ~ {Invulnerable:1b, Tags:[game_room_5, game_obj, game_guess],NoAI:1b, DeathLootTable:'', Color:14b} 
+execute at @e[tag=game_worker, limit=1] run summon shulker ~110 ~ ~ {Invulnerable:1b, Tags:[game_room_6, game_obj, game_guess],NoAI:1b, DeathLootTable:'', Color:14b} 
+execute at @e[tag=game_worker, limit=1] run summon shulker ~132 ~ ~ {Invulnerable:1b, Tags:[game_room_7, game_obj, game_guess],NoAI:1b, DeathLootTable:'', Color:14b} 
+execute at @e[tag=game_worker, limit=1] run summon shulker ~154 ~ ~ {Invulnerable:1b, Tags:[game_room_8, game_obj, game_guess],NoAI:1b, DeathLootTable:'', Color:14b} 
+execute at @e[tag=game_worker, limit=1] run summon shulker ~176 ~ ~ {Invulnerable:1b, Tags:[game_room_9, game_obj, game_guess],NoAI:1b, DeathLootTable:'', Color:14b} 
 execute at @e[tag=game_worker, limit=1] run setblock ~1 ~ ~ anvil
 execute at @e[tag=game_worker, limit=1] run setblock ~23 ~ ~ anvil
 execute at @e[tag=game_worker, limit=1] run setblock ~45 ~ ~ anvil
