@@ -29,7 +29,9 @@ execute at @e[tag=game_worker, limit=1] run setblock ~89 ~ ~ anvil
 execute at @e[tag=game_worker, limit=1] run setblock ~111 ~ ~ anvil
 execute at @e[tag=game_worker, limit=1] run setblock ~133 ~ ~ anvil
 execute at @e[tag=game_worker, limit=1] run setblock ~155 ~ ~ anvil
-execute at @e[tag=game_worker, limit=1] run setblock ~178 ~ ~ anvil
+execute at @e[tag=game_worker, limit=1] run setblock ~177 ~ ~ anvil
+
+effect give @e[tag=game_ans] invisibility 10000 1 true
 
 experience set @a[tag=game_player] 100 levels
 give @a[tag=game_player] name_tag
