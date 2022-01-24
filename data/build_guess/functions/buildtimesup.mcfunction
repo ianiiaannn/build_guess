@@ -9,7 +9,7 @@ execute as @e[tag=game_overflow] run kill @s
 tag @e remove game_player_dont_tp
 
 scoreboard players reset @e[tag=game_timer] timer
-scoreboard players set @e[tag=game_timer_end] timer 1000
+scoreboard players set @e[tag=game_timer_end] timer 2000
 scoreboard players set @e[tag=game] status 2
 
 execute at @e[tag=game_worker, limit=1] run summon shulker ~ ~ ~ {Invulnerable:1b, Tags:[game_room_1, game_obj, game_guess],NoAI:1b, DeathLootTable:'', Color:14b} 
@@ -21,17 +21,18 @@ execute at @e[tag=game_worker, limit=1] run summon shulker ~110 ~ ~ {Invulnerabl
 execute at @e[tag=game_worker, limit=1] run summon shulker ~132 ~ ~ {Invulnerable:1b, Tags:[game_room_7, game_obj, game_guess],NoAI:1b, DeathLootTable:'', Color:14b} 
 execute at @e[tag=game_worker, limit=1] run summon shulker ~154 ~ ~ {Invulnerable:1b, Tags:[game_room_8, game_obj, game_guess],NoAI:1b, DeathLootTable:'', Color:14b} 
 execute at @e[tag=game_worker, limit=1] run summon shulker ~176 ~ ~ {Invulnerable:1b, Tags:[game_room_9, game_obj, game_guess],NoAI:1b, DeathLootTable:'', Color:14b} 
-execute at @e[tag=game_worker, limit=1] run setblock ~1 ~ ~ anvil
-execute at @e[tag=game_worker, limit=1] run setblock ~23 ~ ~ anvil
-execute at @e[tag=game_worker, limit=1] run setblock ~45 ~ ~ anvil
-execute at @e[tag=game_worker, limit=1] run setblock ~67 ~ ~ anvil
-execute at @e[tag=game_worker, limit=1] run setblock ~89 ~ ~ anvil
-execute at @e[tag=game_worker, limit=1] run setblock ~111 ~ ~ anvil
-execute at @e[tag=game_worker, limit=1] run setblock ~133 ~ ~ anvil
-execute at @e[tag=game_worker, limit=1] run setblock ~155 ~ ~ anvil
-execute at @e[tag=game_worker, limit=1] run setblock ~177 ~ ~ anvil
+execute at @e[tag=game_worker, limit=1] run setblock ~1 ~-1 ~ anvil
+execute at @e[tag=game_worker, limit=1] run setblock ~23 ~-1 ~ anvil
+execute at @e[tag=game_worker, limit=1] run setblock ~45 ~-1 ~ anvil
+execute at @e[tag=game_worker, limit=1] run setblock ~67 ~-1 ~ anvil
+execute at @e[tag=game_worker, limit=1] run setblock ~89 ~-1 ~ anvil
+execute at @e[tag=game_worker, limit=1] run setblock ~111 ~-1 ~ anvil
+execute at @e[tag=game_worker, limit=1] run setblock ~133 ~-1 ~ anvil
+execute at @e[tag=game_worker, limit=1] run setblock ~155 ~-1 ~ anvil
+execute at @e[tag=game_worker, limit=1] run setblock ~177 ~-1 ~ anvil
 
 effect give @e[tag=game_ans] invisibility 10000 1 true
+effect give @a[tag=game_player] resistance 100000 6 true
 
 experience set @a[tag=game_player] 100 levels
 give @a[tag=game_player] name_tag

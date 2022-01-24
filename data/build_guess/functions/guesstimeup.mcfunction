@@ -12,9 +12,6 @@ scoreboard players reset @e[tag=game_timer] timer
 scoreboard players set @e[tag=game_timer_end] timer 6000
 scoreboard players set @e[tag=game] status 1
 
-
-
-
 setblock 0 200 0 stone
 setblock 0 201 0 oak_sign
 effect give @e[tag=game_ans] invisibility 10000 1 true

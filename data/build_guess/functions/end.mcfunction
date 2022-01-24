@@ -5,6 +5,8 @@ scoreboard objectives remove status
 scoreboard objectives remove sidebar
 scoreboard objectives remove round
 
+effect clear @e
+
 execute at @e[tag=game] run clone ~11 ~-4 ~11 ~-11 ~40 ~-11 ~22 ~-4 ~22 replace force
 execute at @e[tag=game] run clone ~11 ~-4 ~11 ~-11 ~40 ~-11 ~22 ~-4 ~44 replace force
 execute at @e[tag=game] run clone ~11 ~-4 ~11 ~-11 ~40 ~-11 ~22 ~-4 ~66 replace force

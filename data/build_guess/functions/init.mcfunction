@@ -7,15 +7,13 @@ execute at @s run summon armor_stand ~ ~2 ~ {Marker:1b, Tags:[game_timer], Custo
 execute at @s run summon armor_stand ~ ~2 ~ {Marker:1b, Tags:[game_timer_end], CustomName:'{"text":"終止時間"}', Invisible:1b}
 execute at @s run summon armor_stand ~23 ~-1 ~23 {Marker:1b, Tags:[game_worker], CustomName:'{"text":"Worker"}', Invisible:1b}
 execute as @e[tag=game] run say Initing rooms
-execute at @e[tag=game] run fill ~10 ~-4 ~10 ~-10 ~-4 ~-10 quartz_block
 
-execute at @e[tag=game] run fill ~11 ~-4 ~11 ~11 ~30 ~-11 purple_concrete
-execute at @e[tag=game] run fill ~11 ~-4 ~-11 ~-11 ~30 ~-11 purple_concrete
-execute at @e[tag=game] run fill ~-11 ~-4 ~-11 ~-11 ~30 ~11 purple_concrete
-execute at @e[tag=game] run fill ~-11 ~-4 ~11 ~11 ~30 ~11 purple_concrete
-
+execute at @e[tag=game] run fill ~10 ~-4 ~10 ~-10 ~-4 ~-10 gray_concrete
+execute at @e[tag=game] run fill ~11 ~-4 ~11 ~11 ~30 ~-11 stone
+execute at @e[tag=game] run fill ~11 ~-4 ~-11 ~-11 ~30 ~-11 stone
+execute at @e[tag=game] run fill ~-11 ~-4 ~-11 ~-11 ~30 ~11 stone
+execute at @e[tag=game] run fill ~-11 ~-4 ~11 ~11 ~30 ~11 stone
 execute at @e[tag=game] run fill ~8 ~-4 ~8 ~-8 ~-4 ~-8 grass_block
-
 
 execute at @e[tag=game] run clone ~11 ~-4 ~11 ~-11 ~40 ~-11 ~22 ~-4 ~22 replace force
 execute at @e[tag=game] run clone ~11 ~-4 ~11 ~-11 ~40 ~-11 ~22 ~-4 ~44 replace force
@@ -101,7 +99,7 @@ execute at @e[tag=game] run clone ~11 ~-4 ~11 ~-11 ~40 ~-11 ~198 ~-4 ~198 replac
 
 execute at @e[tag=game] run setblock ~ ~15 ~ command_block{Command:"function build_guess:start"}
 execute at @e[tag=game] run setblock ~ ~16 ~ stone_pressure_plate
-execute at @e[tag=game] run fill ~10 ~-4 ~10 ~-10 ~-4 ~-10 quartz_block
+execute at @e[tag=game] run fill ~10 ~-4 ~10 ~-10 ~-4 ~-10 gray_concrete
 execute at @e[tag=game] run fill ~10 ~-4 ~10 ~7 ~-4 ~7 red_concrete
 execute at @e[tag=game] run fill ~-10 ~-4 ~10 ~-7 ~-4 ~7 blue_concrete
 
@@ -111,6 +109,8 @@ scoreboard objectives add round dummy
 scoreboard objectives add sidebar dummy "狀態列表"
 scoreboard players add @e[tag=game] status 0
 scoreboard players add @e[tag=game_timer_one] timer 1
+
+effect give @s glowing 1000 1 true
 
 tp @a @e[tag=game,limit=1]
 

@@ -7,5 +7,8 @@ execute as @e[tag=game] run execute at @s run tp @e[tag=game_worker] ~23 ~-1 ~23
 
 kill @e[tag=game_obj]
 
+difficulty peaceful
+effect give @a[tag=game_player] resistance 100000 6 true
+
 gamemode creative @a[tag=game_player]
 gamemode spectator @a[tag=!game_player]
