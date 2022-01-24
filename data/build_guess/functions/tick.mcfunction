@@ -31,6 +31,10 @@ execute as @e[tag=game,limit=1,scores={status=1}] run execute at @s run execute 
 execute as @e[tag=game,limit=1,scores={status=2}] run execute at @s run execute as @e[y=-60,dx=250,dy=500,dz=250, type=end_crystal] run kill @s 
 execute as @e[tag=game,limit=1,scores={status=1}] run execute at @s run execute as @e[y=-60,dx=250,dy=500,dz=250, type=fireball] run kill @s 
 execute as @e[tag=game,limit=1,scores={status=2}] run execute at @s run execute as @e[y=-60,dx=250,dy=500,dz=250, type=fireball] run kill @s 
+execute as @e[tag=game,limit=1,scores={status=1}] run execute at @s run execute as @e[y=-60,dx=250,dy=500,dz=250, type=item_frame] run kill @s 
+execute as @e[tag=game,limit=1,scores={status=2}] run execute at @s run execute as @e[y=-60,dx=250,dy=500,dz=250, type=item_frame] run kill @s 
+execute as @e[tag=game,limit=1,scores={status=1}] run execute at @s run execute as @e[y=-60,dx=250,dy=500,dz=250, type=glow_item_frame] run kill @s 
+execute as @e[tag=game,limit=1,scores={status=2}] run execute at @s run execute as @e[y=-60,dx=250,dy=500,dz=250, type=glow_item_frame] run kill @s 
 execute as @e[tag=game,limit=1,scores={status=1}] run execute at @s run execute as @e[y=-60,dx=250,dy=500,dz=250] run data modify entity @s NoAI set value true
 execute as @e[tag=game,limit=1,scores={status=2}] run execute at @s run execute as @e[y=-60,dx=250,dy=500,dz=250] run data modify entity @s NoAI set value true
 

@@ -8,12 +8,13 @@ execute at @s run summon armor_stand ~ ~2 ~ {Marker:1b, Tags:[game_timer_end], C
 execute at @s run summon armor_stand ~23 ~-1 ~23 {Marker:1b, Tags:[game_worker], CustomName:'{"text":"Worker"}', Invisible:1b}
 execute as @e[tag=game] run say Initing rooms
 
-execute at @e[tag=game] run fill ~10 ~-4 ~10 ~-10 ~-4 ~-10 gray_concrete
-execute at @e[tag=game] run fill ~11 ~-4 ~11 ~11 ~30 ~-11 stone
-execute at @e[tag=game] run fill ~11 ~-4 ~-11 ~-11 ~30 ~-11 stone
-execute at @e[tag=game] run fill ~-11 ~-4 ~-11 ~-11 ~30 ~11 stone
-execute at @e[tag=game] run fill ~-11 ~-4 ~11 ~11 ~30 ~11 stone
-execute at @e[tag=game] run fill ~8 ~-4 ~8 ~-8 ~-4 ~-8 grass_block
+execute at @e[tag=game] run fill ~10 ~-3 ~10 ~-10 ~-3 ~-10 gray_concrete
+execute at @e[tag=game] run fill ~10 ~-4 ~10 ~-10 ~-4 ~-10 bedrock
+execute at @e[tag=game] run fill ~11 ~-3 ~11 ~11 ~30 ~-11 stone
+execute at @e[tag=game] run fill ~11 ~-3 ~-11 ~-11 ~30 ~-11 stone
+execute at @e[tag=game] run fill ~-11 ~-3 ~-11 ~-11 ~30 ~11 stone
+execute at @e[tag=game] run fill ~-11 ~-3 ~11 ~11 ~30 ~11 stone
+execute at @e[tag=game] run fill ~8 ~-3 ~8 ~-8 ~-3 ~-8 grass_block
 
 execute at @e[tag=game] run clone ~11 ~-4 ~11 ~-11 ~40 ~-11 ~22 ~-4 ~22 replace force
 execute at @e[tag=game] run clone ~11 ~-4 ~11 ~-11 ~40 ~-11 ~22 ~-4 ~44 replace force
@@ -98,10 +99,9 @@ execute at @e[tag=game] run clone ~11 ~-4 ~11 ~-11 ~40 ~-11 ~198 ~-4 ~176 replac
 execute at @e[tag=game] run clone ~11 ~-4 ~11 ~-11 ~40 ~-11 ~198 ~-4 ~198 replace force
 
 execute at @e[tag=game] run setblock ~ ~15 ~ command_block{Command:"function build_guess:start"}
-execute at @e[tag=game] run setblock ~ ~16 ~ stone_pressure_plate
-execute at @e[tag=game] run fill ~10 ~-4 ~10 ~-10 ~-4 ~-10 gray_concrete
-execute at @e[tag=game] run fill ~10 ~-4 ~10 ~7 ~-4 ~7 red_concrete
-execute at @e[tag=game] run fill ~-10 ~-4 ~10 ~-7 ~-4 ~7 blue_concrete
+execute at @e[tag=game] run fill ~10 ~-3 ~10 ~-10 ~-3 ~-10 gray_concrete
+execute at @e[tag=game] run fill ~10 ~-3 ~10 ~7 ~-3 ~7 red_concrete
+execute at @e[tag=game] run fill ~-10 ~-3 ~10 ~-7 ~-3 ~7 blue_concrete
 
 scoreboard objectives add timer dummy
 scoreboard objectives add status dummy

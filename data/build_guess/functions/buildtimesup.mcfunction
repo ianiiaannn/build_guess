@@ -33,6 +33,7 @@ execute at @e[tag=game_worker, limit=1] run setblock ~177 ~-1 ~ anvil
 
 effect give @e[tag=game_ans] invisibility 10000 1 true
 effect give @a[tag=game_player] resistance 100000 6 true
+effect give @a[tag=game_player] saturation 100000 6 true
 
 experience set @a[tag=game_player] 100 levels
 give @a[tag=game_player] name_tag

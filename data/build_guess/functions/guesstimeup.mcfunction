@@ -55,7 +55,7 @@ execute as @e[tag=game_room_9] run execute as @s[tag=game_ans] at @s run data mo
 
 kill @e[tag=game_guess]
 
-scoreboard players set @e[tag=game,limit=1,scores={round=9}] status 3
+scoreboard players set @e[tag=game,limit=1,scores={round=5}] status 3
 execute as @e[tag=game,limit=1,scores={status=3}] run say 遊戲結束
 execute as @e[tag=game,limit=1,scores={status=3}] run gamemode creative @a[tag=game_player]
 execute as @e[tag=game,limit=1,scores={status=3}] run execute at @s run tp @a[tag=game_player] ~40 ~ ~40
