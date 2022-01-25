@@ -61,6 +61,8 @@ execute as @e[tag=game,limit=1,scores={status=3}] run gamemode creative @a[tag=g
 execute as @e[tag=game,limit=1,scores={status=3}] run execute at @s run tp @a[tag=game_player] ~40 ~ ~40
 execute as @e[tag=game,limit=1,scores={status=3}] run scoreboard objectives setdisplay sidebar
 execute as @e[tag=game,limit=1,scores={status=3}] run effect clear @e[tag=game_obj] invisibility
+execute as @e[tag=game,limit=1,scores={status=3}] run tellraw @a "感謝遊玩！本專案 Github 連結："
+execute as @e[tag=game,limit=1,scores={status=3}] run tellraw @a {"text": "https://github.com/ianiiaannn/build_guess","clickEvent":{"action":"open_url","value":"https://github.com/ianiiaannn/build_guess"}}
 
 scoreboard players add @e[tag=game] round 1
 
